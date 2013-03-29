@@ -9,5 +9,5 @@ When /^I spoof the change$/ do
 end
 
 Then /^something should happen$/ do
-  find('p.message').should be_visible
+  page.must_have_css 'p'
 end

@@ -2,15 +2,11 @@ script src="js/jam/require.js"
 
 javascript:
   require(['jquery'], function ($) {
-    $('p.message').hide();
     $('select').on('change', function() {
-      $('p.message').show();
+      $('body').append("<p>it's not really a paragraph, now is it?</p>");
     });
   });
 
 select#rawrblah
   option.blah value='blah' Blah
   option.rawr value='rawr' Rawr
-
-p.message
-  | it's not really a paragraph, now is it?
